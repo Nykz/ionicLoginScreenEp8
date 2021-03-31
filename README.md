@@ -5,7 +5,7 @@ MUSIC APP such as gaana, Wynk, Saavn (Auth Screens with form validation)
 <img src="https://github.com/Nykz/ionicLoginScreenEp8/blob/main/Screenshots/screen2.png" width="200" height="400" />
 <img src="https://github.com/Nykz/ionicLoginScreenEp8/blob/main/Screenshots/screen3.png" width="200" height="400" />
 
-### Steps to Setup this beautiful E-Commerce App screen in your system
+### Steps to Setup this beautiful MUSIC App screen in your system
 
 1.Download the zipped project
 
