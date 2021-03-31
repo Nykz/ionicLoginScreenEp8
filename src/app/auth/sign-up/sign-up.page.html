@@ -1,0 +1,74 @@
+<ion-content [fullscreen]="true">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button mode="md" defaultHref="/auth" color="white"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <ion-row>
+      <ion-label>
+        Create
+        <p>Account</p>
+      </ion-label>
+    </ion-row>
+  </ion-header>
+
+  <ion-list class="ion-padding-horizontal ion-margin-horizontal">
+    <form [formGroup]="form">
+      <div class="ion-margin-bottom">
+        <ion-item>
+          <ion-input color="white" placeholder="Name" type="text" formControlName="name"></ion-input>
+        </ion-item>
+        <div class="ion-text-right error" *ngIf="!form.get('name').valid && form.get('name').touched">
+          <ion-text color="danger" *ngIf="form.get('name').hasError('required')">
+            * Please enter your Name
+          </ion-text>
+        </div>
+      </div>
+      <div class="ion-margin-bottom">
+        <ion-item>
+          <ion-input color="white" placeholder="Email" type="email" formControlName="email"></ion-input>
+        </ion-item>
+        <div class="ion-text-right error" *ngIf="!form.get('email').valid && form.get('email').touched">
+          <ion-text color="danger" *ngIf="form.get('email').hasError('required')">
+            * Please enter your Email Address
+          </ion-text>
+          <ion-text color="danger" 
+            *ngIf="!form.get('email').hasError('required') && form.get('email').hasError('email')">
+            * Please enter a proper Email Address
+          </ion-text>
+        </div>
+      </div>
+      <div class="ion-margin-bottom">
+        <ion-item>
+          <ion-input color="white" placeholder="Password" type="password" formControlName="password"></ion-input>
+        </ion-item>
+        <div class="ion-text-right error" *ngIf="!form.get('password').valid && form.get('password').touched">
+          <ion-text color="danger" *ngIf="form.get('password').hasError('required')">
+            * Please enter your Password
+          </ion-text>
+          <ion-text color="danger" 
+            *ngIf="!form.get('password').hasError('required') && form.get('password').hasError('minlength')">
+            * Password must be of atleast 8 characters
+          </ion-text>
+        </div>
+      </div> 
+      <ion-item lines="none" class="signin">
+        <ion-label color="white">
+          Sign up
+        </ion-label>
+        <ion-fab-button color="primary" slot="end" (click)="submit()">
+          <ion-icon name="arrow-forward-outline" color="white"></ion-icon>
+        </ion-fab-button>
+      </ion-item>     
+    </form>
+
+    <ion-item lines="none" class="featuredItems">
+      <ion-text slot="start" color="white" routerLink="/auth/sign-in">Sign in</ion-text>
+    </ion-item>
+
+
+  </ion-list>  
+
+</ion-content>

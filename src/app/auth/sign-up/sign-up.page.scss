@@ -1,0 +1,48 @@
+ion-content {
+    --background: url('../../../assets/imgs/3.png') no-repeat center center/cover;
+    ion-header {
+        ion-toolbar {
+            --background: transparent;
+        }
+        ion-row {
+          margin: 6vh;
+          ion-label, p {
+              font-size: 1.8rem;
+              color: var(--ion-color-white);
+          }
+          p {
+              margin-top: 3px;
+          }
+        }
+    }
+
+    ion-list {
+        transform: translateY(3vh);
+        background: transparent;
+        ion-item {
+            --background: transparent; 
+            ion-label {
+                font-weight: bold;
+                font-size: 1.2em;
+            }           
+            ion-input {
+                font-size: 0.9em;
+            }
+        }
+        .signin {
+            margin: 10vh 0 2vh 0;
+        }
+
+        .error {
+            font-size: 0.75em;
+        }
+        .featuredItems {
+            margin-top: 5vh;
+            ion-text {
+                font-weight: bold;
+                font-size: 0.9em;
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<ion-content [fullscreen]="true">
+
+  <div align="center">
+    <ion-img src="assets/imgs/logo.png"></ion-img>
+  </div>
+
+  <ion-grid>
+    <p align="center">
+      <ion-label color="primary">
+        <strong>Welcome to <ion-text color="danger">Music App</ion-text></strong>
+      </ion-label>
+    </p>
+    <ion-row>
+      <ion-col>
+        <ion-button size="large" expand="block" shape="round" color="primary" routerLink="/auth/sign-in">
+          <ion-text>Sign In</ion-text>
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button size="large" expand="block" shape="round" color="secondary" routerLink="/auth/sign-up">
+          <ion-text>Sign Up</ion-text>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>
