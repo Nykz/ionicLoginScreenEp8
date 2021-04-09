@@ -1,6 +1,8 @@
 # ionicLoginScreenEp8
 MUSIC APP such as gaana, Wynk, Saavn (Auth Screens with form validation)
 
+Watch the Full Episode on youtube at http://bit.ly/authEp8
+
 <img src="https://github.com/Nykz/ionicLoginScreenEp8/blob/main/Screenshots/screen1.png" width="200" height="400" />
 <img src="https://github.com/Nykz/ionicLoginScreenEp8/blob/main/Screenshots/screen2.png" width="200" height="400" />
 <img src="https://github.com/Nykz/ionicLoginScreenEp8/blob/main/Screenshots/screen3.png" width="200" height="400" />
